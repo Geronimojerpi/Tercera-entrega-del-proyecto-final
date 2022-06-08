@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+header {
+  background-color: #566573;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 180px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header div {
+  font-size: 2.8rem;
+  color: #f0f3f4;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 13px;
+}
+
+header nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #f0f3f4;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media all and (min-width: 1378px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 93px;
+  }
+  nav {
+    margin-right: 500px;
+    padding: 20px;
+  }
+}
+
+/*Banner*/
+.bannerindex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 180px;
+  height: 720px;
+  background-image: url(https://i.pinimg.com/474x/c4/6e/c6/c46ec6f328a019c025c4d200c6eb0e20.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerindex h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  width: 90%;
+}
+
+@media all and (min-width: 1378px) {
+  .bannerindex {
+    background-image: url(https://mercadofitness.com/ar/wp-content/uploads/2022/04/El-mercado-de-equipos-de-fitness-facturar%C3%A1-U16.310-millones-para-2028-scaled.jpg);
+    height: 837px;
+    margin-top: 93px;
+  }
+  .bannerindex h1 {
+    font-size: 5rem;
+    color: white;
+  }
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 180px;
+  height: 500px;
+  background-image: url(https://static.wixstatic.com/media/nsplsh_e63fa7de98124b6db5b90f40a21dc375~mv2.jpg/v1/fill/w_602,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Samuel%20Girven.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+}
+
+.banner__nutricion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 180px;
+  height: 500px;
+  background-image: url(https://thefoodtech.com/wp-content/uploads/2021/09/alimentos-seguros.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__nutricion h1 {
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  width: 90%;
+}
+
+@media all and (min-width: 1378px) {
+  .banner {
+    margin-top: 93px;
+    background-image: url(https://foxlexington.com/wp-content/uploads/sites/24/2021/12/gym-resolutions-pic0.jpg?strip=1);
+  }
+  .banner__nutricion {
+    margin-top: 93px;
+    background-image: url(https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/5f5b77df96e7eead076f2a05_nutricion.jpeg);
+    height: 500px;
+  }
+  .banner__nutricion h1 {
+    color: white;
+  }
+}
+
+/*Entrenamiento Y Nutricion*/
+.card__entrenamiento, .card__nutricion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #e5e7e9;
+}
+
+.card__entrenamiento article, .card__nutricion article {
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 500px;
+  margin-top: 85px;
+  text-align: center;
+  margin-bottom: 85px;
+  background-color: white;
+}
+
+.card__entrenamiento article img, .card__nutricion article img {
+  width: 330px;
+  height: 220px;
+  border-bottom: 2px solid black;
+  margin-bottom: 7px;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.card__entrenamiento article {
+  height: 519px;
+}
+
+.card__entrenamiento article div {
+  width: 330px;
+}
+
+.card__entrenamiento article div h2 {
+  font-size: 1.6rem;
+}
+
+.card__entrenamiento article div p {
+  font-size: 0.9rem;
+  padding-top: 9px;
+}
+
+.card__nutricion article {
+  height: 485px;
+}
+
+.card__nutricion article div {
+  width: 330px;
+}
+
+.card__nutricion article div h2 {
+  font-size: 1.6rem;
+}
+
+.card__nutricion article div p {
+  font-size: 0.9rem;
+  padding-top: 9px;
+}
+
+@media all and (min-width: 1378px) {
+  .banner {
+    height: 500px;
+  }
+  .card__entrenamiento, .card__nutricion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*Team*/
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 201px;
+  height: 593px;
+}
+
+.team img {
+  width: 350px;
+  height: 300px;
+}
+
+.team article {
+  text-align: center;
+  height: 274px;
+  width: 80%;
+  margin-bottom: 80px;
+}
+
+.team article img {
+  width: 350px;
+  height: 300px;
+}
+
+.team article div {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.team article p {
+  margin-top: 9px;
+  font-size: 0.9rem;
+}
+
+@media all and (min-width: 1378px) {
+  .team {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 205px;
+  }
+  .team img {
+    width: 630px;
+    height: 530px;
+    margin-left: 50px;
+  }
+  .team article {
+    width: 500px;
+    margin-right: 50px;
+  }
+  .team article div {
+    font-size: 2.5rem;
+  }
+  .team article p {
+    margin-top: 9px;
+    font-size: 1.2rem;
+  }
+  .team footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/*Contacto*/
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 93px;
+  height: 800px;
+  background-color: #e5e7e9;
+}
+
+.contacto h2 {
+  margin: 15px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contacto input {
+  margin: 8px;
+  height: 30px;
+  width: 250px;
+}
+
+.contacto textarea {
+  margin: 8px;
+  width: 250px;
+  height: 120px;
+  font-size: 0.9rem;
+}
+
+.contacto .boton {
+  width: 105px;
+}
+
+@media all and (min-width: 1378px) {
+  .contacto {
+    height: 836px;
+  }
+}
+
+/*Footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #566573;
+}
+
+footer img {
+  height: 50px;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #566573;
+  position: fixed;
+  bottom: 0;
+}
+
+.foot img {
+  height: 50px;
+}
+/*# sourceMappingURL=estilos.css.map */

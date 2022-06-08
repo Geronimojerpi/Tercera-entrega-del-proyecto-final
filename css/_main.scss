@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Header*/
+
+header{
+    background-color: #566573;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+        div{
+            font-size: 2.8rem;
+            color: #f0f3f4;
+            margin-bottom: 10px;
+            font-weight: map-get($map: $fuentes, $key: bold);
+            margin-top: 10px;
+        }
+
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+                li{
+                    list-style-type: none;
+                    display: inline-block;
+                    padding: 13px;
+                }
+
+                    a{
+                        text-decoration: none;
+                        list-style-type: none;
+                        color: #f0f3f4;
+                        font-size: 1.3rem;
+                        font-weight: map-get($map: $fuentes, $key: medium);
+                    }
+        }
+}
+
+@media all and (min-width:1378px){
+    
+    header{
+        flex-direction: row;
+        height: 93px}
+
+        nav{
+            margin-right: 500px;
+            padding: 20px;
+
+        }
+
+    }
+
+
+/*Banner*/
+ 
+.bannerindex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    height: 720px;
+    background-image: url(https://i.pinimg.com/474x/c4/6e/c6/c46ec6f328a019c025c4d200c6eb0e20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+        h1{
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            width: 90%;
+         
+        }
+      
+}
+
+@media all and (min-width:1378px){
+
+    .bannerindex{
+        background-image: url(https://mercadofitness.com/ar/wp-content/uploads/2022/04/El-mercado-de-equipos-de-fitness-facturar%C3%A1-U16.310-millones-para-2028-scaled.jpg);
+        height: 837px;
+        margin-top: 93px;
+
+        h1{
+            font-size: 5rem;
+            color: white;
+        }
+    }
+
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    height: 500px;
+    background-image: url(https://static.wixstatic.com/media/nsplsh_e63fa7de98124b6db5b90f40a21dc375~mv2.jpg/v1/fill/w_602,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Samuel%20Girven.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+        h1{
+            color: whitesmoke;
+            font-size: 3rem;
+            font-weight: map-get($map: $fuentes, $key: bold);
+            text-align: center;
+            width: 90%;
+        }
+}
+
+.banner__nutricion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    height: 500px;
+    background-image: url(https://thefoodtech.com/wp-content/uploads/2021/09/alimentos-seguros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+        h1{
+            color: whitesmoke;
+            font-size: 3rem;
+            font-weight: map-get($map: $fuentes, $key: bold);
+            text-align: center;
+            width: 90%;
+        }
+}
+
+@media all and (min-width:1378px){
+
+   .banner{
+        margin-top: 93px;
+        background-image: url(https://foxlexington.com/wp-content/uploads/sites/24/2021/12/gym-resolutions-pic0.jpg?strip=1);
+        
+    }
+
+   .banner__nutricion{
+    margin-top: 93px;
+    background-image: url(https://assets-global.website-files.com/5f4f67c5950db17954dd4f52/5f5b77df96e7eead076f2a05_nutricion.jpeg);
+    height: 500px;
+        h1{
+            color: white;
+        }
+   }
+}
+
+/*Entrenamiento Y Nutricion*/
+
+%contenedor__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #e5e7e9;
+}
+
+%articulo__card{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    margin-top: 85px;
+    text-align: center;
+    margin-bottom: 85px;
+    background-color: white;
+}
+
+%imagen__card{
+    width: 330px;
+    height: 220px;
+    border-bottom: 2px solid black; 
+    margin-bottom: 7px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.card__entrenamiento{
+    @extend %contenedor__card;
+
+        article{
+            @extend %articulo__card;
+            height: 519px;
+            
+
+            img{
+                @extend %imagen__card;
+            }
+
+            div{
+                width: 330px; 
+
+                    h2{
+                        font-size: 1.6rem;
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        padding-top: 9px;
+                    }
+
+            }
+            
+        }
+
+    }
+
+.card__nutricion{
+    @extend %contenedor__card;
+
+        article{
+            @extend %articulo__card;
+            height: 485px;
+
+            img{
+                @extend %imagen__card;
+            }
+
+            div{
+                width: 330px; 
+
+                    h2{
+                        font-size: 1.6rem;
+                    }
+
+                    p{
+                        font-size: 0.9rem;
+                        padding-top: 9px;
+                    }
+
+            }
+            
+        }
+
+    }
+
+    @media all and (min-width:1378px){
+
+        .banner{
+            height: 500px;
+        }
+    
+        .card__entrenamiento , .card__nutricion{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+    }
+
+/*Team*/
+
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 201px;
+    height: 593px;
+    
+    img{
+        width: 350px;
+        height: 300px;
+    }
+
+    article{
+        text-align: center;
+        height: 274px;
+        width: 80%;
+        margin-bottom: 80px;
+        
+        img{
+            width: 350px;
+            height: 300px;
+        }
+
+            div{
+                font-size: 2rem;
+                font-weight: map-get($map: $fuentes, $key: semibold);
+                margin-top: 12px;
+            }
+
+            p{
+                margin-top: 9px;
+                font-size: 0.9rem;
+            }
+
+    }
+}
+
+@media all and (min-width:1378px){
+    
+    .team{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 205px;
+
+        img{
+            width: 630px;
+            height: 530px;
+            margin-left: 50px;
+        }
+
+        article{
+            width: 500px;   
+            margin-right: 50px;
+                div{
+                    font-size: 2.5rem;
+                }
+        
+                p{
+                    margin-top: 9px;
+                    font-size: 1.2rem;
+                }
+        }
+    
+        footer{
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}
+
+
+/*Contacto*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 93px;
+    height: 800px;
+    background-color: #e5e7e9;
+    
+
+        h2{
+            margin: 15px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        input{
+            margin: 8px;
+            height: 30px;
+            width: 250px;
+        }
+
+        textarea{
+            margin: 8px;
+            width: 250px;
+            height: 120px;
+            font-size: 0.9rem;  
+        }
+
+        .boton{
+            width: 105px;
+        }
+}
+
+@media all and (min-width:1378px){
+    .contacto{
+        height: 836px;
+    }
+}
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #566573;
+        img{
+            height: 50px;
+        }
+}
+
+.foot{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #566573;
+    position: fixed;
+    bottom: 0;
+        img{
+            height: 50px;
+        }
+}
+
+
+
